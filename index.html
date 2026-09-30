@@ -12,7 +12,6 @@
         <a href="#top">トップ</a>
         <a href="#about-site">このサイトについて</a>
         <a href="#portfolio">ポートフォリオ</a>
-        <a href="#profile">経歴</a>
     </nav>
 </header>
 
@@ -47,7 +46,7 @@
                     </div>
                     <div>
                         <h4>URL</h4>
-                        <p><a href="#">アプリURL</a><br><a href="#">GitHub</a></p>
+                        <p><a href="#">アプリURL</a><br><a href="https://github.com/xRockx/spring_portfolio">GitHub</a></p>
                     </div>
 
                     <div>
@@ -132,29 +131,29 @@
 
             <div class="content-block">
                 <h3>作成経緯</h3>
-                <p>これまでの学習内容をもとに、DVDレンタルシステムをWebアプリケーションとして制作しました。学習したJava・Spring Bootなどの知識を実際のアプリケーション制作に活用することを目的としています。</p>
+                <p>これまでの学習内容をもとに、DVDレンタルシステムをWebアプリケーションとして制作しました。学習したJavaやSpringなどの知識を生かした結果を、貴社にご確認頂きたく作成いたしました。</p>
             </div>
 
             <div class="content-block">
                 <h3>工夫した点・苦労した点</h3>
                 <div class="point">
-                    <h4>Spring Securityによるアクセス制御</h4>
-                    <p>ログイン認証だけでなく、ユーザーの権限に応じたアクセス制御を実装しました。未ログイン状態で認証が必要なページへ直接アクセスした場合は、ログインページへ誘導するよう設定しています。</p>
+                    <h4>Spring Securityによるアクセス・表示制御</h4>
+                    <p>ログイン認証だけでなく、ユーザーの権限に応じたアクセス制御と表示制御を実装しました。未ログイン状態で認証が必要なページへ直接アクセスした場合は、ログインページへ誘導するよう設定しています。<br>
+                    また、一般ユーザーでログインしていると管理者権限が必要なユーザー機能へのボタンが表示されず、直接アクセスもできないよう設定しています。</p>
                 </div>
                 <div class="point">
-                    <h4>ここに実際の工夫・苦労した内容を追加</h4>
-                    <p>実際に制作していて苦労した点や、調べて解決した方法を記載します。</p>
+                    <h4>複数のユーザーが同じDVDをレンタルしようとした時の制御</h4>
+                    <p>同じDVDを複数の環境で表示したうえで、既にレンタルされている状況で別の環境でレンタルしようとした時に、システムを落とさずエラー処理するのに苦労しました。</p>
                 </div>
             </div>
 
             <div class="content-block links">
                 <h3>GitHub / アプリURL</h3>
-                <div class="button-group"><a class="button" href="#">GitHubを見る</a><a class="button" href="#">アプリを見る</a></div>
+                <div class="button-group"><a class="button" href="https://github.com/xRockx/spring_portfolio">GitHubを見る</a><a class="button" href="#">アプリを見る</a></div>
             </div>
         </div>
     </section>
 
-    <section id="profile" class="minor-section"><div class="section-inner narrow"><h2>経歴</h2><p>必要に応じて後から追加します。</p></div></section>
 </main>
 
 <footer class="footer"><p>&copy; 2026 My Portfolio</p></footer>
