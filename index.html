@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ紹介 | DVDレンタルシステム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="global-nav">
+        <a href="#top">トップ</a>
+        <a href="#about-site">このサイトについて</a>
+        <a href="#portfolio">ポートフォリオ</a>
+        <a href="#profile">経歴</a>
+    </nav>
+</header>
+
+<main id="top">
+    <section class="hero">
+        <div class="section-inner hero-inner">
+            <p class="eyebrow">MY PORTFOLIO</p>
+            <h1>ポートフォリオ紹介</h1>
+            <p class="hero-message">Welcome！！</p>
+        </div>
+    </section>
+
+    <section id="about-site" class="section">
+        <div class="section-inner narrow">
+            <h2>このサイトについて</h2>
+            <p>このサイトは、私が手掛けたポートフォリオサイトです。<br>
+            これまでの学習や制作したWebアプリケーションについて紹介しています。</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="section-inner">
+            <h2>DVDレンタルシステム</h2>
+
+            <div class="content-block">
+                <h3>アプリの概要</h3>
+                <p>DVDのレンタル・返却やユーザー管理などを行うWebアプリケーションです。</p>
+                <div class="info-grid">
+                    <div>
+                        <h4>使用技術</h4>
+                        <p>HTML / CSS / Java / Spring Boot / Thymeleaf / MyBatis / Spring Security / Tomcat / PostgreSQL</p>
+                    </div>
+                    <div>
+                        <h4>URL</h4>
+                        <p><a href="#">アプリURL</a><br><a href="#">GitHub</a></p>
+                    </div>
+
+                    <div>
+                        <h4>デモアカウント</h4>
+                        <p> <strong>■ 一般ユーザー</strong><br>
+                            ユーザー名：user<br>
+                            パスワード：pass
+                        </p>
+                    </div>
+                    <div>
+                        <h4><br></h4>
+                        <p> <strong>■ 管理者</strong><br>
+                            ユーザー名：admin<br>
+                            パスワード：pass
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>主な機能</h3>
+                <div class="feature-grid">
+                    <ul>
+                        <li>DVDレンタル</li>
+                        <li>DVD返却</li>
+                        <li>ユーザー新規登録</li>
+                        <li>ユーザー削除</li>
+                    </ul>
+                    <ul>
+                        <li>ログイン認証</li>
+                        <li>認可・権限管理</li>
+                        <li>ログアウト</li>
+                        <li>未認証ユーザーのアクセス制限</li>
+                        <li>パスワードのハッシュ化</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>画面紹介</h3>
+                
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/login.png" alt="ログイン画面"></div>
+                    <div class="screen-description"><h4>ログイン画面</h4><p>ログインを行う画面です。入力したパスワードはハッシュ化し、データベースと照合して合っていればログイン処理を行います。</p></div>
+                </article>
+                
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/menu-user.png" alt="メニュー画面"></div>
+                    <div class="screen-description"><h4>メニュー画面</h4><p>DVD機能にアクセスできる画面です。また、ログアウトも行うことができます。</p></div>
+                </article>
+
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/menu.png" alt="メニュー画面（管理者）"></div>
+                    <div class="screen-description"><h4>メニュー画面（管理者）</h4><p>DVD機能とユーザー機能にアクセスできる画面です。また、ログアウトも行うことができます。</p></div>
+                </article>
+
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/rental.png" alt="DVDレンタル画面"></div>
+                    <div class="screen-description"><h4>DVDレンタル画面</h4><p>DVDを選択してレンタル処理を行う画面です。在庫状況を確認しながらレンタル操作を行います。</p></div>
+                </article>
+
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/return.png" alt="DVD返却画面"></div>
+                    <div class="screen-description"><h4>DVD返却画面</h4><p>レンタル中のDVDを確認し、返却処理を行う画面です。</p></div>
+                </article>
+
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/user-register.png" alt="ユーザー登録画面"></div>
+                    <div class="screen-description"><h4>ユーザー登録画面</h4><p>新しいユーザーを登録する画面です。</p></div>
+                </article>
+
+                <article class="screen-item">
+                    <div class="screen-image"><img src="images/user-delete.png" alt="ユーザー削除画面"></div>
+                    <div class="screen-description"><h4>ユーザー削除画面</h4><p>登録されているユーザーを削除する画面です。</p></div>
+                </article>
+            </div>
+
+            <div class="content-block">
+                <h3>ER図</h3>
+                <div class="diagram"><img src="images/er-diagram.png" alt="DVDレンタルシステムのER図"></div>
+            </div>
+
+            <div class="content-block">
+                <h3>作成経緯</h3>
+                <p>これまでの学習内容をもとに、DVDレンタルシステムをWebアプリケーションとして制作しました。学習したJava・Spring Bootなどの知識を実際のアプリケーション制作に活用することを目的としています。</p>
+            </div>
+
+            <div class="content-block">
+                <h3>工夫した点・苦労した点</h3>
+                <div class="point">
+                    <h4>Spring Securityによるアクセス制御</h4>
+                    <p>ログイン認証だけでなく、ユーザーの権限に応じたアクセス制御を実装しました。未ログイン状態で認証が必要なページへ直接アクセスした場合は、ログインページへ誘導するよう設定しています。</p>
+                </div>
+                <div class="point">
+                    <h4>ここに実際の工夫・苦労した内容を追加</h4>
+                    <p>実際に制作していて苦労した点や、調べて解決した方法を記載します。</p>
+                </div>
+            </div>
+
+            <div class="content-block links">
+                <h3>GitHub / アプリURL</h3>
+                <div class="button-group"><a class="button" href="#">GitHubを見る</a><a class="button" href="#">アプリを見る</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="minor-section"><div class="section-inner narrow"><h2>経歴</h2><p>必要に応じて後から追加します。</p></div></section>
+</main>
+
+<footer class="footer"><p>&copy; 2026 My Portfolio</p></footer>
+</body>
+</html>
