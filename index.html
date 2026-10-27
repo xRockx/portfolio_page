@@ -11,7 +11,11 @@
     <nav class="global-nav">
         <a href="#top">トップ</a>
         <a href="#about-site">このサイトについて</a>
-        <a href="#portfolio">ポートフォリオ</a>
+        <a href="#overview">DVDレンタルシステムの概要</a>
+        <a href="#features">主な機能</a>
+        <a href="#screens">画面紹介</a>
+        <a href="#er-diagram">ER図</a>
+        <a href="#improvements">作成経緯、苦労した点等</a>
     </nav>
 </header>
 
@@ -28,11 +32,11 @@
         <div class="section-inner narrow">
             <h2>このサイトについて</h2>
             <p>このサイトは、私が手掛けたポートフォリオサイトです。<br>
-            これまでの学習や制作したWebアプリケーションについて紹介しています。</p>
+            制作したWebアプリケーションについてご紹介いたします。</p>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <section id="overview" class="section portfolio-section">
         <div class="section-inner">
             <h2>DVDレンタルシステム</h2>
 
@@ -73,7 +77,10 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+    </section>
+    <section id="features" class="section portfolio-section">
+        <div class="section-inner">
             <div class="content-block">
                 <h3>主な機能</h3>
                 <div class="feature-grid">
@@ -92,7 +99,10 @@
                     </ul>
                 </div>
             </div>
-
+        </div>
+    </section>
+    <section id="screens" class="section portfolio-section">
+        <div class="section-inner">
             <div class="content-block">
                 <h3>画面紹介</h3>
                 
@@ -131,23 +141,31 @@
                     <div class="screen-description"><h4>ユーザー削除画面</h4><p>登録されているユーザーを削除する画面です。</p></div>
                 </article>
             </div>
-
+        </div>
+    </section>
+    <section id="er-diagram" class="section portfolio-section">
+        <div class="section-inner">
             <div class="content-block">
                 <h3>ER図</h3>
                 <div class="diagram"><img src="images/er-diagram.png" alt="DVDレンタルシステムのER図"></div>
             </div>
-
+        </div>
+    </section>
+    <section id="improvements" class="section portfolio-section">
+        <div class="section-inner">
             <div class="content-block">
                 <h3>作成経緯</h3>
-                <p>これまでの学習内容をもとに、DVDレンタルシステムをWebアプリケーションとして制作しました。学習したJavaやSpringなどの知識を生かした結果を、貴社にご確認頂きたく作成いたしました。</p>
+                <p>以前、C#のWindowsFormを使用してDVDレンタル業務システムを作成したことがありました。
+                    その経験をもとにJavaの学習で身に付けたSpring Bootを使用して同様の業務システムをWebアプリケーションとして実装してみたいと考え、今回のポートフォリオを作成いたしました。</p>
             </div>
-
+        
+    
             <div class="content-block">
                 <h3>工夫した点・苦労した点</h3>
                 <div class="point">
                     <h4>Spring Securityによるアクセス・表示制御</h4>
-                    <p>ログイン認証だけでなく、ユーザーの権限に応じたアクセス制御と表示制御を実装しました。未ログイン状態で認証が必要なページへ直接アクセスした場合は、ログインページへ誘導するよう設定しています。<br>
-                    また、一般ユーザーでログインしていると管理者権限が必要なユーザー機能へのボタンが表示されず、直接アクセスもできないよう設定しています。</p>
+                    <p>ログイン認証に加え、ユーザーの権限に応じたアクセス制御を実装しました。未ログイン状態で認証が必要なページへ直接アクセスした場合は、ログインページへ誘導するよう設定しています。<br>
+                    また、一般ユーザーには管理者専用機能のボタンを表示させず、管理者権限が必要なページへの直接アクセスも制限しています。</p>
                 </div>
                 <div class="point">
                     <h4>複数のユーザーが同じDVDをレンタルしようとした時の制御</h4>
@@ -160,6 +178,7 @@
                 <div class="button-group"><a class="button" href="https://github.com/xRockx/spring_portfolio">GitHubを見る</a><a class="button" href="https://spring-portfolio-wvpe.onrender.com/">アプリを見る</a></div>
             </div>
         </div>
+        
     </section>
 
 </main>

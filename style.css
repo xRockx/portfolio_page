@@ -10,7 +10,6 @@ body {
     background-color: #eaf7ff;
 }
 
-/* 背景は後でCanva等の画像に差し替え可能。現在は空をイメージした淡い背景。 */
 body::before {
     content: "";
     position: fixed;
@@ -109,3 +108,39 @@ h4 { margin: 0 0 12px; font-size: 1.05rem; font-weight: 600; }
     .screen-image { padding: 12px; }
     .screen-image img { max-height: 430px; }
 }
+
+.portfolio-section {
+  padding: 0 20px;
+}
+
+#overview.portfolio-section {
+  padding-top: 90px;
+}
+
+.portfolio-section .content-block {
+  margin-top: 55px;
+}
+
+#overview.portfolio-section .content-block {
+  margin-top: 0;
+}
+
+#improvements.portfolio-section {
+  padding-bottom: 90px;
+}
+
+@media (max-width: 760px) {
+  .portfolio-section {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  #overview.portfolio-section {
+    padding-top: 60px;
+  }
+
+  #improvements.portfolio-section {
+    padding-bottom: 60px;
+  }
+}
+
